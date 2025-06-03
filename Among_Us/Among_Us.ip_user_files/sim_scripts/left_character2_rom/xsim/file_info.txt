@@ -1,0 +1,2 @@
+left_character2_rom.v,verilog,xil_defaultlib,../../../../Among_Us.gen/sources_1/ip/left_character2_rom/sim/left_character2_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

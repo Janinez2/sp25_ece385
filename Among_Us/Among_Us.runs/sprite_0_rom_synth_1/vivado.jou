@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon May  5 15:57:53 2025
+# Process ID: 49880
+# Current directory: C:/Users/Jnzhu/Documents/Vivado/Among_Us/Among_Us.runs/sprite_0_rom_synth_1
+# Command line: vivado.exe -log sprite_0_rom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sprite_0_rom.tcl
+# Log file: C:/Users/Jnzhu/Documents/Vivado/Among_Us/Among_Us.runs/sprite_0_rom_synth_1/sprite_0_rom.vds
+# Journal file: C:/Users/Jnzhu/Documents/Vivado/Among_Us/Among_Us.runs/sprite_0_rom_synth_1\vivado.jou
+# Running On: LAPTOP-GK96VVK3, OS: Windows, CPU Frequency: 1497 MHz, CPU Physical cores: 4, Host memory: 8318 MB
+#-----------------------------------------------------------
+source sprite_0_rom.tcl -notrace

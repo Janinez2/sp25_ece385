@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="collision_test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="collision_test" />
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="lib_pkg" />
+            <top_module name="lmb_bram_if_funcs" />
+            <top_module name="mdm_funcs" />
+            <top_module name="tc_types" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="211,263 ps"></ZoomStartTime>
+      <ZoomEndTime time="211,284 ps"></ZoomEndTime>
+      <Cursor1Time time="211,272 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="171"></NameColumnWidth>
+      <ValueColumnWidth column_width="78"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/collision_test/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/reset_rtl_0" type="logic">
+      <obj_property name="ElementShortName">reset_rtl_0</obj_property>
+      <obj_property name="ObjectShortName">reset_rtl_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/keycodes_test" type="array">
+      <obj_property name="ElementShortName">keycodes_test[7:0]</obj_property>
+      <obj_property name="ObjectShortName">keycodes_test[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/gpio_usb_int_tri_i" type="array">
+      <obj_property name="ElementShortName">gpio_usb_int_tri_i[0:0]</obj_property>
+      <obj_property name="ObjectShortName">gpio_usb_int_tri_i[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/gpio_usb_rst_tri_o" type="logic">
+      <obj_property name="ElementShortName">gpio_usb_rst_tri_o</obj_property>
+      <obj_property name="ObjectShortName">gpio_usb_rst_tri_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/usb_spi_miso" type="logic">
+      <obj_property name="ElementShortName">usb_spi_miso</obj_property>
+      <obj_property name="ObjectShortName">usb_spi_miso</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/usb_spi_mosi" type="logic">
+      <obj_property name="ElementShortName">usb_spi_mosi</obj_property>
+      <obj_property name="ObjectShortName">usb_spi_mosi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/usb_spi_sclk" type="logic">
+      <obj_property name="ElementShortName">usb_spi_sclk</obj_property>
+      <obj_property name="ObjectShortName">usb_spi_sclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/usb_spi_ss" type="logic">
+      <obj_property name="ElementShortName">usb_spi_ss</obj_property>
+      <obj_property name="ObjectShortName">usb_spi_ss</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/uart_rtl_0_rxd" type="logic">
+      <obj_property name="ElementShortName">uart_rtl_0_rxd</obj_property>
+      <obj_property name="ObjectShortName">uart_rtl_0_rxd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/uart_rtl_0_txd" type="logic">
+      <obj_property name="ElementShortName">uart_rtl_0_txd</obj_property>
+      <obj_property name="ObjectShortName">uart_rtl_0_txd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/among_us/ball_instance/MapX" type="array">
+      <obj_property name="ElementShortName">MapX[9:0]</obj_property>
+      <obj_property name="ObjectShortName">MapX[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/among_us/ball_instance/MapY" type="array">
+      <obj_property name="ElementShortName">MapY[9:0]</obj_property>
+      <obj_property name="ObjectShortName">MapY[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/among_us/ball_instance/hit" type="logic">
+      <obj_property name="ElementShortName">hit</obj_property>
+      <obj_property name="ObjectShortName">hit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/among_us/ball_instance/Map_X_next" type="array">
+      <obj_property name="ElementShortName">Map_X_next[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Map_X_next[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/among_us/ball_instance/Map_Y_next" type="array">
+      <obj_property name="ElementShortName">Map_Y_next[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Map_Y_next[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/among_us/ball_instance/Map_X_Motion" type="array">
+      <obj_property name="ElementShortName">Map_X_Motion[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Map_X_Motion[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/among_us/ball_instance/Map_Y_Motion" type="array">
+      <obj_property name="ElementShortName">Map_Y_Motion[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Map_Y_Motion[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/among_us/ball_instance/Map_X_Motion_next" type="array">
+      <obj_property name="ElementShortName">Map_X_Motion_next[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Map_X_Motion_next[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/among_us/ball_instance/Map_Y_Motion_next" type="array">
+      <obj_property name="ElementShortName">Map_Y_Motion_next[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Map_Y_Motion_next[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/among_us/ball_instance/move" type="logic">
+      <obj_property name="ElementShortName">move</obj_property>
+      <obj_property name="ObjectShortName">move</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/among_us/ball_instance/Reset" type="logic">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/among_us/ball_instance/vga_clk" type="logic">
+      <obj_property name="ElementShortName">vga_clk</obj_property>
+      <obj_property name="ObjectShortName">vga_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/among_us/ball_instance/frame_clk" type="logic">
+      <obj_property name="ElementShortName">frame_clk</obj_property>
+      <obj_property name="ObjectShortName">frame_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/among_us/ball_instance/MapX_curr" type="array">
+      <obj_property name="ElementShortName">MapX_curr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">MapX_curr[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/collision_test/among_us/ball_instance/MapY_curr" type="array">
+      <obj_property name="ElementShortName">MapY_curr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">MapY_curr[9:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../Among_Us.gen/sources_1/ip/task_num_fail_rom_1/sim/task_num_fail_rom.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

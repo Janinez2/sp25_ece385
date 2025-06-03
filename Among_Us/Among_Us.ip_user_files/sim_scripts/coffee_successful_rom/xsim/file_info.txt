@@ -1,0 +1,2 @@
+coffee_successful_rom.v,verilog,xil_defaultlib,../../../../Among_Us.gen/sources_1/ip/coffee_successful_rom/sim/coffee_successful_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

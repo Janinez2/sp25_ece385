@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../Among_Us.gen/sources_1/ip/coffee_rom/sim/coffee_rom.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

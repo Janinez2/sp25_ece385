@@ -1,0 +1,2 @@
+shower_on_rom.v,verilog,xil_defaultlib,../../../../Among_Us.gen/sources_1/ip/shower_on_rom/sim/shower_on_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri May  9 06:39:54 2025
+# Process ID: 44352
+# Current directory: C:/Users/Jnzhu/Documents/Vivado/Among_Us/Among_Us.runs/vials_rom_synth_1
+# Command line: vivado.exe -log vials_rom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vials_rom.tcl
+# Log file: C:/Users/Jnzhu/Documents/Vivado/Among_Us/Among_Us.runs/vials_rom_synth_1/vials_rom.vds
+# Journal file: C:/Users/Jnzhu/Documents/Vivado/Among_Us/Among_Us.runs/vials_rom_synth_1\vivado.jou
+# Running On: LAPTOP-GK96VVK3, OS: Windows, CPU Frequency: 1497 MHz, CPU Physical cores: 4, Host memory: 8318 MB
+#-----------------------------------------------------------
+source vials_rom.tcl -notrace

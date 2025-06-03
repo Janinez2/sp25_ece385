@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../Among_Us.gen/sources_1/ip/sprite_0_rom/sim/sprite_0_rom.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

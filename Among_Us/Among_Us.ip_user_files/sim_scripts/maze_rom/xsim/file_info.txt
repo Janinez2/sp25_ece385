@@ -1,0 +1,2 @@
+maze_rom.v,verilog,xil_defaultlib,../../../../Among_Us.gen/sources_1/ip/maze_rom/sim/maze_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
