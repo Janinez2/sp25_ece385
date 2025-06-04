@@ -1,37 +1,37 @@
-# Among Us Final Project  
-**ECE 385 – Spring 2025**  
+# Among Us – ECE 385 Final Project
+
+**University of Illinois Urbana-Champaign**  
+**Course:** ECE 385: Digital Systems Laboratory  
+**Semester:** Spring 2025  
 **Authors:** Janine Zhu and Sarayu Suresh  
 **Lab Section:** XJ, 12:00 PM  
 **Instructor:** Xuanbo Jin  
 
 ---
 
-## Overview
+## Project Overview
 
-This project recreates a simplified version of *Among Us* on a Spartan-7 FPGA using the MicroBlaze processor. A sprite character moves around a zoomed-in map of the ECE building, controlled via USB keyboard, and interacts with custom minigames implemented in hardware. All graphics are rendered in real time and output over HDMI using VGA-based timing.
-
-### Core Features:
-- USB keyboard input via SPI (MAX3421E)
-- Map scrolling with stationary animated character
-- Custom FSM-based tasks: number matching, coffee pouring, vial sorting
-- HDMI output with VGA signal generation
-- Obstacle collision and task completion logic
+This project implements a simplified version of the game *Among Us* using the MicroBlaze processor on a Spartan-7 FPGA. The player can move a character across a zoomed-in map of the ECE building, interact with task locations, and complete minigames. The system uses a USB keyboard, VGA-to-HDMI output, and multiple custom SystemVerilog modules integrated with Vivado IPs.
 
 ---
 
-## ⚙️ System Architecture
+## System Summary
 
 ### MicroBlaze Processor
-- 32-bit RISC softcore CPU
-- AXI-based memory-mapped I/O
-- Handles USB polling, game logic, task states
-- Developed using Xilinx Vivado and Vitis SDK
 
-### Data Flow
-1. USB keyboard sends keycodes → read via SPI
-2. MicroBlaze polls input and updates game state
-3. Hardware FSMs render map + task output via VGA
-4. HDMI bridge displays visuals
+- 32-bit RISC soft processor synthesized on FPGA
+- Communicates with USB keyboard via **MAX3421E** over **SPI**
+- Handles polling, game state logic, and keyboard input processing
+- Written in **C using Vitis SDK**
+- Interfaces with custom hardware via memory-mapped AXI I/O
+
+### Overall Operation
+
+1. User inputs (WASD/space/number keys) are polled from the USB keyboard
+2. Character position and tasks update based on inputs
+3. Sprite animations and background scrolling rendered to HDMI monitor
+4. Tasks activate when near designated locations and require successful user interaction
+5. FSMs and sprite ROMs control rendering and logic for win/fail screens
 
 ---
 
@@ -52,25 +52,59 @@ This project recreates a simplified version of *Among Us* on a Spartan-7 FPGA us
 
 ---
 
-##  Block Design IPs
+## Vivado IP Components
 
-- **MicroBlaze**: Main processor core
-- **AXI UARTLite**: Debug output
-- **AXI Interrupt Controller**: Aggregates interrupt sources
-- **AXI Interconnect**: Connects MicroBlaze to AXI peripherals
-- **Local Memory**: BRAM for code/data
-- **SPI USB (AXI Quad SPI)**: Talks to MAX3421E
-- **GPIO**: USB reset, USB int, keycode output
-- **Timer USB**: Millisecond tick timer
-- **HDMI Bridge**: Converts VGA signals to HDMI
+| IP Block             | Purpose                                                                 |
+|----------------------|-------------------------------------------------------------------------|
+| MicroBlaze           | Main processor for polling/logic                                        |
+| AXI UARTLite         | Serial debug output                                                     |
+| AXI Interrupt Ctrl   | Handles interrupts from timer, GPIO, SPI                                |
+| AXI Interconnect     | Routes communication between AXI master and peripherals                 |
+| Clocking Wizard      | Generates 100 MHz system clock                                          |
+| Local Memory         | On-chip BRAM for MicroBlaze program/data                               |
+| GPIO (USB rst/int)   | Resets MAX3421E and detects interrupts                                  |
+| SPI USB              | Communicates with MAX3421E via SPI                                      |
+| Timer USB AXI        | Provides millisecond timing for USB polling                            |
+| HDMI IP Bridge       | Converts VGA signals to HDMI using TMDS                                |
 
 ---
 
-## SPI Communication
+## SPI Protocol with MAX3421E
 
-Used to interface with MAX3421E:
 ```c
-MAXreg_wr(BYTE reg, BYTE val);      // Write 1 byte
-MAXreg_rd(BYTE reg);                // Read 1 byte
-MAXbytes_wr(BYTE reg, BYTE n, BYTE* data); // Write n bytes
-MAXbytes_rd(BYTE reg, BYTE n, BYTE* data); // Read n bytes
+MAXreg_wr(BYTE reg, BYTE val);         // Write a byte to register
+MAXreg_rd(BYTE reg);                   // Read a byte from register
+MAXbytes_wr(BYTE reg, BYTE n, BYTE*);  // Write multiple bytes
+MAXbytes_rd(BYTE reg, BYTE n, BYTE*);  // Read multiple bytes
+```
+
+Used to enumerate the USB device, poll keycodes, and control register behavior.
+
+---
+
+
+##  Resource Utilization
+
+| Resource       | Value    |
+|----------------|----------|
+| LUTs           | 5207     |
+| DSPs           | 40       |
+| BRAM           | 72.5     |
+| Flip-Flops     | 2899     |
+| Static Power   | 0.079 W  |
+| Dynamic Power  | 0.415 W  |
+| Total Power    | 0.494 W  |
+| Frequency      | 68.8 MHz |
+
+---
+
+
+## Potential Extensions
+
+- Add sound effects via SGTL5000 codec  
+- Implement voice-based or volume-sensitive task  
+- Support dual input (keyboard + mouse) via GPIO and 2 FPGA boards  
+- Add shooting game, password logic, AI character tasks  
+
+---
+
