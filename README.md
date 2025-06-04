@@ -6,7 +6,7 @@
 
 ---
 
-## 🧠 Overview
+## Overview
 
 This project recreates a simplified version of *Among Us* on a Spartan-7 FPGA using the MicroBlaze processor. A sprite character moves around a zoomed-in map of the ECE building, controlled via USB keyboard, and interacts with custom minigames implemented in hardware. All graphics are rendered in real time and output over HDMI using VGA-based timing.
 
@@ -52,7 +52,7 @@ This project recreates a simplified version of *Among Us* on a Spartan-7 FPGA us
 
 ---
 
-## 📐 Block Design IPs
+##  Block Design IPs
 
 - **MicroBlaze**: Main processor core
 - **AXI UARTLite**: Debug output
@@ -66,7 +66,7 @@ This project recreates a simplified version of *Among Us* on a Spartan-7 FPGA us
 
 ---
 
-## 🔌 SPI Communication
+## SPI Communication
 
 Used to interface with MAX3421E:
 ```c
